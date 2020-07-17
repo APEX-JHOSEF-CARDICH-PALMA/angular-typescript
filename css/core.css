@@ -1,0 +1,587 @@
+
+/***
+PALETA DE COLORES USADOS EN LA PAGINA
+
+ box-shadow: 0px 0px 5px 0px  #888888; COLOR DE LAS SOMBRAS
+ color: #2c5c0b; COLOR VERDE OSCURO
+ color: #75b822; COLOR VERDE CLARO
+ color: #380102; COLOR MARRON
+ #212121 texto primario
+ #757575 texto secundario
+   text-shadow:2px 2px 2px #cac9cb; texto
+   fomatos de pantalla:
+   16:9
+   18,5:9 (mas alargado,   2:1)
+
+ */
+
+
+/**********************************
+Background white body
+***********************************/
+body {
+	background-color: white;
+}
+
+
+/**********************************
+Responsive navbar-brand image CSS
+- Remove navbar-brand padding for firefox bug workaround
+- add 100% height and width auto ... similar to how bootstrap img-responsive class works
+
+Navbar
+- line height is 20px by default so add 45px top and bottom to equal the new .navbar-brand 110px height
+***********************************/
+.navbar {
+  background: transparent;
+  border-style: none;
+  z-index: 2;
+
+  -webkit-transition: all 0.6s ease-out;
+  -moz-transition: all 0.6s ease-out;
+  -o-transition: all 0.6s ease-out;
+  -ms-transition: all 0.6s ease-out;
+  transition: all 0.6s ease-out;
+}
+
+.navbar.scrolled {
+  background-color: white;
+  box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.3), 0 1px 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+.navbar .navbar-brand {
+  padding: 0px;
+  height: 110px;
+}
+
+.navbar .navbar-brand > img {
+  height: 100%;
+  width: auto;
+}
+
+.navbar .nav > li > a.fa-bars {
+  font-size: 3em !important;
+}
+
+.navbar .nav > li > a {
+  color: #75b822;
+  padding-top: 45px;
+  padding-bottom: 45px;
+  text-decoration: none;
+  /*font-family: HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;*/
+}
+
+.navbar .nav > li > a:hover {
+  text-decoration: none;
+  color: #380102;
+}
+
+
+/**********************************
+Offcanvas
+***********************************/
+#offcanvas-usage {
+  z-index: 3;
+}
+
+#offcanvas-usage .uk-offcanvas-bar {
+  background: #2c5c0b;
+}
+
+#offcanvas-usage .uk-offcanvas-bar .menu-list {
+  padding-top: 70px; /* 60px + 40px (padding parent div) = 100px, the height of the nav */
+  margin: 0 auto;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: #999;
+}
+
+#offcanvas-usage .uk-offcanvas-bar .menu-list li {
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-bottom: 60px;
+
+  /*transition:all 3s ease-in-out;*/
+  /*-webkit-transition: all 3s ease-in;*/
+  /*-moz-transition: all 3s ease-in;*/
+  /*-o-transition: all 3s ease-in;*/
+  /*-ms-transition: all 3s ease-in;*/
+  /*transition: all 3s ease-in;*/
+}
+
+#offcanvas-usage .uk-offcanvas-bar .menu-list > li:hover {
+  border: 2px #5D7942 solid;
+  height: calc(100% - 4px);
+  transition-duration:0.2s;
+}
+
+#offcanvas-usage .uk-offcanvas-bar .menu-list li a {
+  display:block;
+  color: #CCC;
+}
+
+#offcanvas-usage .uk-offcanvas-bar .menu-list li a:hover, #offcanvas-usage .uk-offcanvas-ba.menu-list li a:focus {
+  color: #a4c187;
+}
+
+
+/**********************************
+ng-view container
+***********************************/
+.ngview-content {
+  margin-top: 0px;
+}
+
+
+/**********************************
+Carousel images styles
+***********************************/
+/*.carousel-wrapper {*/
+  /*margin-left: 50px;*/
+  /*margin-right: 50px;*/
+/*}*/
+
+#carousel-index-control {
+  width: 100%;
+  /* margin-top: 10px;
+   margin: 0 auto;*/
+
+  padding-left: 0px; /* 0px in the left padding because of bug ocurring with the original col-xs-12 15px left padding */
+  padding-right: 0px; /* 0px in the right padding because of bug ocurring with the original col-xs-12 15px right padding */
+
+  margin-bottom: 30px;
+  box-shadow: 0px 0px 5px 0px  #888888;
+}
+
+#carousel-index-control img {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+#carousel-index-control .carousel-caption h1, #carousel-index-control .carousel-caption h4 {
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 1px rgba(0, 0, 11, 1);
+  font-family: 'trebuchet ms';
+  font-style: oblique;
+  font-weight: normal;
+}
+
+#carousel-sections-control {
+  width: 100%;
+  margin-top: 40px;
+  /*margin: 0 auto;*/
+
+  padding-left: 0px; /* 0px in the left padding because of bug ocurring with the original col-xs-12 15px left padding */
+  padding-right: 0px; /* 0px in the right padding because of bug ocurring with the original col-xs-12 15px right padding */
+
+}
+
+#carousel-sections-control  img {
+  width: 100%;
+  height:100%;
+  margin: 0 auto;
+  box-shadow: 0px 0px 7px 0px  #888888;
+}
+
+#carousel-sections-control .carousel-caption h2, #carousel-sections-control .carousel-caption h4 {
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-shadow: -1px 1px 6px rgba(0, 0, 0, 1);
+  font-family: 'trebuchet ms';
+  font-style: oblique;
+  font-weight: normal;
+}
+
+#carousel-sections-control .fa-chevron-left, #carousel-sections-control .fa-chevron-right {
+  color: #75b822;
+  padding-top: 45px;
+  padding-bottom: 45px;
+  text-decoration: none;
+}
+
+#carousel-sections-control .fa-chevron-left:hover, #carousel-sections-control .fa-chevron-right:hover {
+  text-decoration: none;
+  color: #380102;
+}
+
+#carousel-sections-control .carousel-section .left-arrow {
+  height: 100px;
+  margin-top: 20px;
+}
+
+
+/********************************************
+TEXT BETWEEN THE CAROUSEL AND SECTIONS CARDS
+*********************************************/
+.middle-text{
+  background-color: #fcfcfc;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.middle-text .container {
+  padding: 1% 6%  1% 6%;
+  box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.3), 0 1px 10px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 6px 6px 6px 6px;
+  background-color: white;
+}
+.middle-text .middle-text-tittle {
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
+.middle-text .middle-text-tittle .index-title{
+
+  text-shadow: 3px 3px 3px #a4a3a5; rgba(0, 0, 0, 0.98);
+  font-size: 250%;
+  font-weight: 500;
+}
+.middle-text .row .middle-text-tittle > a > img {
+  height: 75px;
+  width: auto;
+}
+/*.middle-text .middle-text-tittle > h2 {
+  font-family: HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;
+  font-style: oblique;
+  color: #2c5c0b;
+  font-weight:500;
+  text-shadow:3px 3px 4px #cac9cb;
+
+}*/
+
+.middle-text .middle-text-body {
+  padding-top: 2%;
+  font-family: HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;
+  color: #212121;
+  font-size: 120%;
+  text-shadow:3px 3px 4px #cac9cb;
+}
+.middle-text .middle-text-body-dos{
+  background-color: #2b542c;
+  color: white;
+  font-size: 150%;
+  font-weight: 500;
+  font-weight: 200;
+}
+/**********************************
+SECTIONS CARDS STYLES
+***********************************/
+/*#sections-padding-margin {
+  padding: 10px 20px 10px 20px;
+}*/
+
+#sections {
+  /*box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.3), 0 1px 10px 0 rgba(0, 0, 0, 0.3);*/
+}
+
+#sections .container{
+  background-color: #75b822;
+  border-radius: 6px 6px 6px 6px;
+  box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.3), 0 1px 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+
+/*****
+Estilo de las Cajas (miniBox) de cada seccion
+******/
+.minibox-row-one {
+   padding-top:3%;
+   padding-bottom:1%;
+   padding-left: 10%;
+   padding-right:10%;
+ }
+
+.minibox-row-two {
+  padding-top: 1%;
+  padding-bottom: 2%;
+  padding-left: 10%;
+  padding-right:10%;
+}
+
+#sections .container .row .section-minibox {
+  margin-top: 1%;
+  border-radius: 6px 6px 6px 6px;
+  height: 280px;
+  margin-top: 1%;
+  margin-bottom: 2%;
+  box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.3), 0 1px 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+#sections .container .row .section-first-minibox {
+  background: url("../img/minibox-first-bg.png");
+  background-size:100% 100%;
+}
+#sections .container .row .section-second-minibox {
+  background: url("../img/minibox-second-bg.png");
+  background-size:100% 100%;
+}
+#sections .container .row .section-third-minibox {
+  background: url("../img/minibox-thrid-bg.png");
+  background-size:100% 100%;
+}
+#sections .container .row .section-fourth-minibox {
+  background: url("../img/minibox-fourth-bg.png");
+  background-size:100% 100%;
+}
+
+#sections .container .row .section-minibox .section-box-one {
+  padding-left: 0%;
+  padding-right: 0%;
+}
+
+#sections .container .row .section-minibox .section-box-two  .section-minibox-icon{
+  background-color:rgba(0, 0, 0, 0.5);
+  border-radius: 100%;
+  margin-left: 15%;
+  margin-right: 15%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.3), 0 1px 10px 0 rgba(0, 0, 0, 0.3);
+
+}
+
+#sections .container .row .section-minibox .section-box-two .section-minibox-icon > a > img{
+  height: 100px;
+  margin-bottom: 2%;
+  margin-top: 2%;
+}
+
+#sections .container .row .section-minibox .section-box-three{
+  margin-top: 1%;
+  padding-top: 1%;
+  color: white;
+  font-weight: 500;
+  font-family: HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;
+  text-shadow: 1px 1px 1px rgba(150, 150, 150, 1);
+  text-align: center;
+  background-color:rgba(0, 0, 0, 0.5);
+}
+
+
+/******************************************
+        ----SECTION  STYLES-----
+*******************************************/
+.section-title{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.garden-section-title, .garden-section-description{
+  background: url("../img/garden/garden_carousel1.jpg");
+  background-repeat:inherit;
+  background-position: center;
+}
+
+.pool-section-title, .pool-section-description{
+  background: url("../img/pool/pool_carousel5.jpg");
+  background-repeat:inherit;
+  background-position: center;
+}
+
+.construction-section-title, .construction-section-description{
+  background: url("../img/construction/cons_carousel6.jpg");
+  background-repeat:inherit;
+  background-position:center;
+}
+
+.garden-section-description, .pool-section-description, .construction-section-description {
+  margin-top: 30px;
+}
+
+.section-title .container {
+  padding: 1% 6%  1% 6%;
+  box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.3), 0 1px 10px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 6px 6px 6px 6px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.section-title .middle-text-tittle {
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
+.section-title .row .middle-text-tittle > a > img {
+  height: 70px;
+  width: auto;
+}
+
+.section-title .row .section-icon > a > img {
+  background-color: gainsboro;
+  height: 50px;
+  width: auto;
+}
+.section-title .middle-text-body {
+  padding-top: 2%;
+  font-family: HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;
+  font-size: 120%;
+  text-shadow:3px 3px 4px #a4a3a5; color: rgba(0, 0, 0, 0.98);
+}
+
+.section-title .section-heading{
+  margin-top: 90px;
+}
+.section-title  h3{
+  font-family:Arial;
+  font-size: 2em;
+  color: black;
+  font-weight:  700;
+  text-shadow:3px 3px 4px #a4a3a5; color: rgba(0, 0, 0, 0.98);
+}
+
+
+/**********************************
+Sections Carousel animations
+***********************************/
+.thumbnail-image {
+  opacity: 1;
+}
+.thumbnail-image.ng-enter {
+  opacity: 0;
+  -webkit-transition: all 2s ease-in-out;
+  -moz-transition: all 2s ease-in-out;
+  -o-transition: all 2s ease-in-out;
+  -ms-transition: all 2s ease-in-out;
+  transition: all 2s ease-in-out;
+}
+.thumbnail-image.ng-enter-active {
+  opacity: 1;
+}
+
+
+/**********************************
+Contact panel styles
+***********************************/
+#contact {
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+#contact .container{
+  padding: 2% 6%  2% 6%;
+  box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.3), 0 1px 10px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 6px 6px 6px 6px;
+  background-color: rgba(49, 132, 39, 0.87);
+}
+
+
+#contact .text-panel{
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 1px rgba(0, 0, 11, 1);
+  font-family: 'trebuchet ms';
+  font-style: oblique;
+  font-size: 1.2em;
+}
+#contact .contact-text-title {
+  font-size: 1.4em;
+}
+#contact .text-panel:last-child {
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+#contact .text-panel > a {
+  color:white;
+  text-decoration: none;
+}
+#contact .social-panel {
+  margin-top: 15px;
+}
+
+
+
+/**********************************
+Rounded social media icons for Facebook and Instagram
+***********************************/
+.social-circle [class*="fa fa-"] {
+  width: 55px;
+  height: 55px;
+  color: white;
+  border-radius: 50%;
+  display: inline-block;
+  line-height: 55px;
+  margin: auto 8px;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 2px 2px 1px rgba(0, 0, 11, 1);
+
+}
+.fa-facebook {
+  background-color: #3B5A9B;
+}
+.fa-instagram {
+  background: #f09433;
+  background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+}
+.fa-facebook:hover, .fa-instagram:hover {
+  opacity: 0.7;
+  text-decoration: none;
+}
+
+
+/**********************************
+Footer styles
+***********************************/
+#footer {
+	background-color: #380102;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#footer .text-footer {
+	color: white;
+	font-family: HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;
+  font-weight:500;
+  margin-bottom: 0px; /* Removed default margin-bottom */
+}
+
+#footer .text-footer > a {
+	color:white;
+}
+
+
+/**********************************
+Media queries
+***********************************/
+/* Media query margin ng-view when low width */
+@media(max-width: 550px) {
+  .navbar .navbar-brand {
+    padding: 0px;
+    height: 80px;
+  }
+
+  .navbar .nav > li > a.fa-bars {
+    font-size: 2.5em !important;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  #carousel-index-control {
+    width: 100%;
+    height: 210px;
+
+    padding-left: 0px; /* 0px in the left padding because of bug ocurring with the original col-xs-12 15px left padding */
+    padding-right: 0px; /* 0px in the right padding because of bug ocurring with the original col-xs-12 15px right padding */
+  }
+
+  #carousel-index-control img {
+    width: 100%;
+    height: 260px;
+    margin: 0 auto;
+  }
+}
+
+/* Media query xs and sm */
+@media(max-width: 992px) {
+  /* Sections carousel */
+  .carousel-section .left-arrow {
+    margin-left: 3%;
+  }
+}

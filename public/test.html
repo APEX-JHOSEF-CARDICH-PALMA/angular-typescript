@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>vGarden home</title>
+
+    <!-- Stylesheets -->
+    <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/core.css" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar-container">
+      <!-- Navbar -->
+      <nav class="navbar navbar-default navbar-static-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-container">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../index.html">
+              <!-- <img src="https://res.cloudinary.com/candidbusiness/image/upload/v1455406304/dispute-bills-chicago.png" alt="Dispute Bills"> -->
+              <img src="../img/logoVgarden.jpeg" alt="Vgarden">
+            </a>
+          </div>
+          <div id="navbar-collapse-container" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="active"><a href="#">Para su jardín</a></li>
+              <li><a href="#">Para la piscina</a></li>
+              <li><a href="#">Obra nueva</a></li>
+              <li><a href="#">Contacto</a></li>
+              </li>
+            </ul>
+          </div>
+          <!--/.nav-collapse -->
+        </div>
+        <!--/.container-fluid -->
+      </nav>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-md-offset-3 col-md-6" ng-app>
+          <form class="form-signin">
+              <h2 class="form-signin-heading">What you type here:</h2>
+
+              <input ng-model="data.input" type="text" ng-model="data.input" class="form-control" autofocus>
+
+              <h2 class="form-signin-heading">It will also be shown below:</h2>
+
+              <input type="text" class="sr-only">{{data.input}}</input>
+          </form>
+        </div>
+      </div>
+    </div>
+    
+
+    <!-- Scripts -->
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <script src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="../bower_components/angular/angular.js"></script>
+</body>
+</html>

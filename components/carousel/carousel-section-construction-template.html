@@ -1,0 +1,25 @@
+<div uib-carousel
+     active="csconstructionCtrl.active"
+     interval="csconstructionCtrl.slideInterval"
+     no-wrap="csconstructionCtrl.noWrapSlides"
+     no-transition="csconstructionCtrl.noTransition">
+  <div uib-slide ng-repeat="slide in csconstructionCtrl.slides track by slide.id" index="slide.id">
+    <img  ng-src="{{slide.image}}">
+      <div class="carousel-caption">
+        <h2>{{slide.heading}}</h2>
+        <h4>{{slide.caption}}</h4>
+      </div>
+  </div>
+</div>
+
+<div class="row carousel-section">
+  <div class="col-xs-1 col-xs-offset-0 col-md-1 col-md-offset-2 text-center left-arrow">
+    <a class="fa fa-chevron-left fa-lg" ng-click="csconstructionCtrl.prevPage()"></a>
+  </div>
+  <div class="col-xs-3 col-md-2 thumbnail-image" style="margin-top: 20px; height: 100px;" ng-repeat="slide in csconstructionCtrl.activeThumbnails">
+    <img ng-src="{{slide.image}}" style="width:100%; height: 100px;" ng-click="csconstructionCtrl.setActive(slide.id)">
+  </div>
+  <div class="col-xs-1 text-center" style="margin-top: 20px; height: 100px;">
+    <a class="fa fa-chevron-right fa-lg" ng-click="csconstructionCtrl.nextPage()"></a>
+  </div>
+</div>
