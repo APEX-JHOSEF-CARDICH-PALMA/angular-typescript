@@ -18,7 +18,7 @@
     carouselIndexCtrl.slides = [
       {
         id: carouselIndexCtrl.currIndex++,
-        image: "img/index/index_carousel1.jpg",
+        image: "img/index/index_carousel1.jpeg",
         heading: "CALIDAD",
         caption: "En todos nuestros acabados."
       },
