@@ -51,7 +51,7 @@ Navbar
 
 .navbar .navbar-brand {
   padding: 0px;
-  height: 110px;
+  height: 170px;
 }
 
 .navbar .navbar-brand > img {
@@ -111,7 +111,7 @@ Offcanvas
 
 #offcanvas-usage .uk-offcanvas-bar .menu-list > li:hover {
   border: 2px #5D7942 solid;
-  height: calc(100% - 4px);
+  /*height: calc(100% - 4px);*/
   transition-duration:0.2s;
 }
 
@@ -367,7 +367,7 @@ Estilo de las Cajas (miniBox) de cada seccion
         ----SECTION  STYLES-----
 *******************************************/
 .section-title{
-  padding-top: 20px;
+  padding-top: 39px;
   padding-bottom: 20px;
 }
 
