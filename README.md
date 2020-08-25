@@ -44,7 +44,7 @@
 
 ## Instalación
 
-- Después de [instalar](#Anexo) Angular con  en el sistema anfitrión se procedera a situarse la terminal en el directorio raíz del proyecto y ejecutar el siguiente comando:
+- Después de [instalar Angular](#Anexo)  con  en el sistema anfitrión se procedera a situarse la terminal en el directorio raíz del proyecto y ejecutar el siguiente comando:
 
 
 
