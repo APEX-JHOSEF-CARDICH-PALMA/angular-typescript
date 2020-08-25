@@ -13,7 +13,7 @@
 - [Instalación](#instalación)
 - [Dependencias](#Dependencias)
 - [Anexo](#Anexo)
-- [Team](#team)
+- [Equipo](#Equipo)
 
 
 
@@ -21,7 +21,7 @@
 ---
 
  
-## Introduction
+## Introduccíon
 
 
   -  Desarrollo de una sencilla aplicación usando Angular, con diferentes tipos de funcionalidades.
@@ -44,27 +44,20 @@
 
 ## Instalación
 
- - El proyecto se iniciara mediante...
+- Después de [instalar](#Anexo) Angular con  en el sistema anfitrión se procedera a situarse la terminal en el directorio raíz del proyecto y ejecutar el siguiente comando:
 
-> Instalación Angular via homebrew on mac  (consultar en la web para Windows, Linux..)
-```
-$ brew install 
- ```
-- Después de haber installado Angular con npm en el sistema anfitrión
-se procedera a situarse la terminal en el directorio raíz del proyecto y ejecutar el siguiente comando
-para instalar las dependencias e iniciar el sistema (Este ejecuta un secillo servidor en el puerto 3000).
 
-> Instalación de la aplicación 
+
+> Inicio de la Aplicación 
 ```
-$ npm start 
+$ ng serve
+ ```
+- De esta manera se compilará todo el código que del proyecto y se ejecutará un servidor sencillo que muestra un mensaje por la terminal: 
+```
+** Angular Live Development Server is listening on localhost:64689, open your browser on http://localhost:64689/ **
+: Compiled successfully.
  ```
 
-> El sistema nos mostrará el siguiente mensaje por terminal
-```
-El servidor esta corriendo en el puerto 3000..
- ```
-- De esta manera se ejecuta un servidor sencillo que muestra un mensaje por la terminal y además se puede observar en la dirección 'localHost:3000' un mensaje de bienvenida. 
-Esta es una las varias sencillas aplicaciones que se han desarrollado en cada una de las carpetas disponibles dentro del sistema. 
 
 ---
  
@@ -76,34 +69,19 @@ Esta es una las varias sencillas aplicaciones que se han desarrollado en cada un
 
 
 
-> Para ejecutar las aplicaciones, situarse en la carpeta y ejecutar el siguiente comando..
+- #### component/index
 
-```
-ng serve... 
- ```
+Es el componente que se presentará por defecto
 
 
-- #### component/view-1
 
-Por defecto es la que se ejecuta cuando se instala la aplicacion por primera vez. 
-> Para ejecutar el servidor, situarse en la carpeta 'server 'y ejecutar:
-
-
-````
-$ node index.js
-````
 
 <r></r1>
 
 - ####  component/view-2
-Algunas de las operaciones más basicas de matemáticas, se iran agregando mas..
-> Situarse en la carpeta 'maths' y ejecutar
+Algunas de las operaciones más basicas de cambio de presentacion de elementos.
 
-```
-node index.js
- ```
 
-Esto nos mostrará el resulado de las cuatro operaciones básicas de matemátias.
 
 
 ----
@@ -111,9 +89,11 @@ Esto nos mostrará el resulado de las cuatro operaciones básicas de matemátias
 ## Dependencias
 
 
-- [Angular](https://nodejs.org/dist/)
+- [Angular](https://angular.io/)
+
+- [Bootstrap](https://getbootstrap.com/)
 ----
-## Team
+## Equipo
 > Contributors/People
 
 | <a href="https://www.linkedin.com/in/jhosef-anderson-cardich-palma-74765788/" target="_blank">**Jhosef A. Cardich Palma**</a> | 
